@@ -37,3 +37,22 @@
 //     }
 //   }
 // });
+$(document).ready(function() {
+  var timeout = 3000;
+  var timer = 0;
+  var subMenu = null;
+
+  // Show submenu on focus (keyboard navigation)
+  $(".nav-item.dropdown > a").on('focus', function(){
+    closeSubMenu();
+    subMenu = $(this).siblings('ul');
+    subMenu.show();
+  });
+
+  // Hide submenu on blur (keyboard navigation)
+  $(".nav-item.dropdown > ul > li:last-child a").on('blur', function(){
+    timer = setTimeout(function(){
+      closeSubMenu();
+    }, timeout);
+  });
+});
