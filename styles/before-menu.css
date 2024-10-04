@@ -29,8 +29,8 @@
 	margin-top:-1px;
 }
 .nav-item.dropdown:hover ul {
-//	display:block;
+	display:block;
 }
 .navbar-toggler:hover + .navbar-collapse {
-//	display:block;
+	display:block;
 }
