@@ -37,17 +37,5 @@
 //     }
 //   }
 // });
-		      	document.addEventListener('DOMContentLoaded', function() {
-  	var academicsDropdown = document.getElementById('academicsDropdown');
 
-  // Show dropdown when focused using Tab key
- 	 academicsDropdown.addEventListener('focus', function() {
-   	 $(academicsDropdown).dropdown('show');
-  });
-
-  // Hide dropdown when focus is lost
-  	academicsDropdown.addEventListener('blur', function() {
-   	 $(academicsDropdown).dropdown('hide');
-  });
-});
 
