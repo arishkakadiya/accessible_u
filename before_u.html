@@ -68,6 +68,19 @@
                 <li><a class="dropdown-item" href="#">Distance Learning</a></li>
                 <li><a class="dropdown-item" href="#">Libraries</a></li>
               </ul>
+		    		      	document.addEventListener('DOMContentLoaded', function() {
+  	var academicsDropdown = document.getElementById('academicsDropdown');
+
+  // Show dropdown when focused using Tab key
+ 	 academicsDropdown.addEventListener('focus', function() {
+   	 $(academicsDropdown).dropdown('show');
+  });
+
+  // Hide dropdown when focus is lost
+  	academicsDropdown.addEventListener('blur', function() {
+   	 $(academicsDropdown).dropdown('hide');
+  });
+});
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#"
