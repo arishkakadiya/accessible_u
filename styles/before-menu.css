@@ -34,6 +34,6 @@
 .navbar-toggler:hover + .navbar-collapse {
 	display:block;
 }
-.main-menu li a:focus + ul {
+.nav-item dropdown li a:focus + ul {
     display: block;
 }
