@@ -260,15 +260,33 @@
                     <input type="text" id="country" name="country" class="form-control" />
                   </div>
 		<div class="form-group">
+		<fieldset id="majors">
+                  <legend>Desired major(s):</legend>
+                  <ul class="list-unstyled">
+                    <li>
+                      <label for="cs">Computer Science</label>
+                      <input type="checkbox" name="major_cs" id="cs"/>
+                    </li>
+                    <li>
+                      <label for="eng">Engineering</label>
+                      <input type="checkbox" name="major_eng" id="eng"/>
+                    </li>
+                    <li>
+                      <label for="eco">Economics</label>
+                      <input type="checkbox" name="major_econ" id="eco"/>
+                    </li>
+                    <li>
+                      <label for="phy">Physics</label>
+                      <input type="checkbox" name="major_phy" id="phy"/>
+                    </li>
+                    <li>
+                      <label for="psy">Psychology</label>
+                      <input type="checkbox" name="major_psy" id="psy"/>
+                    </li>
+                  </ul>
+                </fieldset>
 	
-                    <div>Desired major(s):</div>
-                    <div class="" id="majors">
-                      <div class="major"><input type="checkbox" id="cs" name="majors"/><label for="cs">Computer Science</label></div>
-                      <div class="major"><input type="checkbox" id="engg" name="majors"/><label for="engg">Engineering</label></div>
-                      <div class="major"><input type="checkbox" id="eco" name="majors"/> Economics </div>
-                      <div class="major"><input type="checkbox" id="phy" name="majors"/> Physics </div>
-                      <div class="major"><input type="checkbox" id="psyco" name="majors"/> Psychology </div>
-                    </div>
+                   
                   </div>
                   <div id="captcha">
                     <p>Security Test</p>
